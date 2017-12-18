@@ -17,7 +17,12 @@ export class SignUpPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-
+  goSignUp():void{
+    this.navCtrl.push(SignUpPage);
+  }
+  goBack():void{
+    this.navCtrl.pop();
+  }
   ionViewDidLoad() {
     console.log('ionViewDidLoad SignUpPage');
   }

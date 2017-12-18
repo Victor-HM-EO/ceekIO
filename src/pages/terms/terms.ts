@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { SignUpPage } from '../sign-up/sign-up';
 
 /**
  * Generated class for the TermsPage page.
@@ -21,5 +22,7 @@ export class TermsPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad TermsPage');
   }
-
+  goSignUp():void{
+    this.navCtrl.push(SignUpPage);
+  }
 }

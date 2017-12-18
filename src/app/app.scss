@@ -18,3 +18,14 @@
     background-color: #3333ff;
     color: #fff;
 }
+.tansparent{
+    background-color:transparent;
+    color: #FFF;
+ }
+ .centrado{
+    text-align: center;
+  }
+  ::-webkit-input-placeholder { color: #FFF; } 
+  :-moz-placeholder { /* Firefox 18- */ color: #FFF; } 
+  ::-moz-placeholder { /* Firefox 19+ */ color: #FFF; } 
+  :-ms-input-placeholder { color: #FFF; }
