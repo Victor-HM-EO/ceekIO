@@ -1,7 +1,58 @@
-<ion-content padding>
+<ion-content padding class="fondo">
     <ion-buttons start color="light" clear >
         <button ion-button (click)="goBack()" color="light" clear><ion-icon name="arrow-round-back"></ion-icon> 
-          Back</button>            
-      </ion-buttons>
-      
+          &nbsp;Back</button>            
+    </ion-buttons>
+    
+      <ion-grid>
+        <ion-row center text-center>
+          <ion-col col-12>
+            <h1>Sign up</h1>
+            <br>
+            <a href=""><img src="assets/imgs/fbconnect.png" title="Ceek" width="200px;"></a>
+          </ion-col>
+        </ion-row>
+    
+        <ion-row align-items-center justify-content-center>
+            <ion-col col-12 col-sm-6 col-md-4 col-lg-3>
+                <form class="centrado">
+                  <ion-list>
+                    <ion-item>
+                      <ion-icon name="mail" item-start></ion-icon>
+                      <ion-input type="text" placeholder="Email"></ion-input>
+                    </ion-item>
+                    <ion-item>
+                      <ion-icon name="person" item-start></ion-icon>
+                      <ion-input type="text" placeholder="Ceek Name"></ion-input>
+                    </ion-item>
+                    <ion-item>
+                      <ion-icon name="unlock" item-start></ion-icon>
+                      <ion-input type="password" placeholder="Pasword"></ion-input>
+                    </ion-item>
+                    <ion-item>
+                      <ion-icon name="lock" item-start></ion-icon>
+                      <ion-input type="text" placeholder="Confirmar Pasword"></ion-input>
+                    </ion-item>
+                    <br>
+                    <!--<div padding>-->
+                    <div>
+                        <ion-segment>
+                          <ion-segment-button value="kittens" style="color: rgb(233, 223, 223);">
+                            <ion-icon name="man"></ion-icon>&nbsp;Male
+                          </ion-segment-button>
+                          <ion-segment-button value="puppies" style="color: rgb(233, 223, 223);">
+                            <ion-icon name="woman"></ion-icon>&nbsp;Female
+                          </ion-segment-button>
+                        </ion-segment>
+                    </div>
+                    <br>
+                    <button ion-button color="light" outline (click)="goPhotoUp()" block>Sing Up</button>
+                    <br>
+                    <p>Texto</p>
+                    <button ion-button clear (click)="goTerms()">Terms Of Services</button>
+                  </ion-list>
+                </form>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
 </ion-content>

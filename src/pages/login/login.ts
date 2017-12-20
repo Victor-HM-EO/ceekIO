@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { SignUpPage } from '../sign-up/sign-up';
+import { ResetPassPage } from '../reset-pass/reset-pass';
 
 /**
  * Generated class for the LoginPage page.
@@ -23,6 +24,9 @@ export class LoginPage {
   }
   goSignUp():void{
     this.navCtrl.push(SignUpPage);
+  }
+  goReset():void{
+    this.navCtrl.push(ResetPassPage);
   }
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');

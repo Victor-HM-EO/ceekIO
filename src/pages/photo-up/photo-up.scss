@@ -1,3 +1,14 @@
-page-photo-up {
-
+.photo{
+    width: 80%;
+    height: 300px;
+    background: rgba(0, 0, 0,0.2); 
+    border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;  
+}
+.img{
+    border-width: 1px;
+    border-color:  #FFF;
+    border-style: solid;
+    margin: 0 20px 0 20px;
 }

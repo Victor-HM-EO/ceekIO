@@ -18,14 +18,33 @@
     background-color: #3333ff;
     color: #fff;
 }
-.tansparent{
+
+.centrado{
+    text-align: center;
+}
+.centrado ion-item{
     background-color:transparent;
     color: #FFF;
- }
- .centrado{
-    text-align: center;
-  }
-  ::-webkit-input-placeholder { color: #FFF; } 
-  :-moz-placeholder { /* Firefox 18- */ color: #FFF; } 
-  ::-moz-placeholder { /* Firefox 19+ */ color: #FFF; } 
-  :-ms-input-placeholder { color: #FFF; }
+}
+.centrado ion-icon, .centrado ion-label, .centrado ion-input{
+    color: #fff;
+}
+/*color blanco en placeholder*/
+.text-input::-moz-placeholder {
+    color: rgb(233, 223, 223);
+}
+.text-input:-ms-input-placeholder {
+    color: rgb(233, 223, 223);
+}  
+.text-input::-webkit-input-placeholder {
+    text-indent: 0;
+    color: rgb(233, 223, 223);
+}
+.btn50{
+    width: 200px;
+}
+.button{
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px; 
+}

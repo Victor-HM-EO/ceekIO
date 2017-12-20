@@ -1,18 +1,36 @@
-<!--
-  Generated template for the PhotoUpPage page.
+<ion-content padding class="fondo">
+    <ion-grid>
+      <ion-row>
+            <ion-col col-6 >
+                <ion-buttons start color="light" clear >
+                    <button ion-button (click)="goBack()" color="light" clear><ion-icon name="arrow-round-back"></ion-icon> 
+                        &nbsp;Back</button>            
+                  </ion-buttons>          
+            </ion-col>
+            <ion-col col-6>
+                <ion-buttons end color="light" clear >
+                    <button ion-button (click)="goBack()" color="light" clear>Skip <ion-icon name="arrow-round-forward"></ion-icon> 
+                      </button>            
+                </ion-buttons>                  
+            </ion-col>      
+      </ion-row>
 
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
-
-  <ion-navbar>
-    <ion-title>photo_up</ion-title>
-  </ion-navbar>
-
-</ion-header>
-
-
-<ion-content padding>
-
+      <ion-row align-items-center justify-content-center>
+      <ion-col col-12 col-sm-6 col-md-4 col-lg-3 class="centrado">
+        <h1 center text-center>Photo</h1>
+        <div col-10 offset-1 class="photo" padding>
+          <div class="img">
+              <img src="assets/imgs/lentes.png" title="Ceek" width="100%">
+          </div>
+          <div padding>
+              <ion-icon name="arrow-dropup"></ion-icon>      
+          </div>
+          <p padding>Texto</p>
+        </div>
+        <div padding>
+            <button ion-button color="light" class="btn50" outline>UPLOAD PHOTO</button>      
+        </div>
+      </ion-col> 
+    </ion-row>
+  </ion-grid>
 </ion-content>

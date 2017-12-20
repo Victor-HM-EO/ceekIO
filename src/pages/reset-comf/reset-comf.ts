@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the PhotoUpPage page.
+ * Generated class for the ResetComfPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,18 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-photo-up',
-  templateUrl: 'photo-up.html',
+  selector: 'page-reset-comf',
+  templateUrl: 'reset-comf.html',
 })
-export class PhotoUpPage {
+export class ResetComfPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-  goBack():void{
-    this.navCtrl.pop();
-  }
+
   ionViewDidLoad() {
-    console.log('ionViewDidLoad PhotoUpPage');
+    console.log('ionViewDidLoad ResetComfPage');
   }
 
 }

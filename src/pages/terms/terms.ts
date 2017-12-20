@@ -25,4 +25,7 @@ export class TermsPage {
   goSignUp():void{
     this.navCtrl.push(SignUpPage);
   }
+  goBack():void{
+    this.navCtrl.pop();
+  }
 }

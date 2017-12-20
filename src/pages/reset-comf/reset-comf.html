@@ -1,5 +1,5 @@
 <!--
-  Generated template for the ResetPassPage page.
+  Generated template for the ResetComfPage page.
 
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
@@ -7,22 +7,16 @@
 <!--<ion-header>
 
   <ion-navbar>
-    <ion-title>reset_pass</ion-title>
+    <ion-title>reset-comf</ion-title>
   </ion-navbar>
 
 </ion-header>-->
-<ion-content padding class="fondo">
-  <ion-buttons start color="light" clear>
-    <button ion-button (click)="goBack()" color="light" clear>
-      <ion-icon name="arrow-round-back"></ion-icon>
-      &nbsp;Back</button>
-  </ion-buttons>
 
+<ion-content padding class="fondo">
   <ion-grid>
     <ion-row center text-center>
       <ion-col col-12>
         <h1>Reset Password</h1>
-        <br>
         <a href="">
           <img src="assets/imgs/refresh48px.png" title="Ceek" width="200px;">
         </a>
@@ -34,15 +28,13 @@
           <form class="centrado">
               <ion-list>
                   <p>Reset your Password</p>  
-                  <ion-item>
-                    <ion-icon name="mail" item-start></ion-icon>
-                    <ion-input type="text" placeholder="Email"></ion-input>
-                  </ion-item>
+                  <ion-icon name="checkmark-circle" style="font-size:50px; color:rgb(58, 156, 86)"></ion-icon>
                   <br>
                   <br>
-                  <button ion-button color="light" outline (click)="goComf()" block>RESET MY PASSWORD</button>
+                  <p style="color:rgb(67, 109, 197)">Check your Email</p>  
+                  <p>Password Reset your Password</p>  
                   <br>
-                  <button ion-button color="light" clear (click)="goSignUp()">Sign Up Now</button>
+                  <button ion-button color="light" outline class="btn50">OK</button>
               </ion-list>
           </form>
       </ion-col>

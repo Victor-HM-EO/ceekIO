@@ -8,7 +8,10 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LoginPageModule } from '../pages/login/login.module';
 import { SignUpPageModule } from '../pages/sign-up/sign-up.module';
-import { SignUpPage } from '../pages/sign-up/sign-up';
+import { TermsPageModule } from '../pages/terms/terms.module'; 
+import { PhotoUpPageModule } from '../pages/photo-up/photo-up.module';
+import { ResetPassPageModule } from '../pages/reset-pass/reset-pass.module';
+import { ResetComfPageModule } from '../pages/reset-comf/reset-comf.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,11 @@ import { SignUpPage } from '../pages/sign-up/sign-up';
     BrowserModule,
     IonicModule.forRoot(MyApp),
     LoginPageModule,
-    SignUpPageModule
+    SignUpPageModule,
+    TermsPageModule,
+    PhotoUpPageModule,
+    ResetPassPageModule,
+    ResetComfPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
