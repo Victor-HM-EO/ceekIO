@@ -36,13 +36,13 @@
                   <p>Reset your Password</p>  
                   <ion-item>
                     <ion-icon name="mail" item-start></ion-icon>
-                    <ion-input type="text" placeholder="Email"></ion-input>
+                    <ion-input type="email" placeholder="Email" clearInput></ion-input>
                   </ion-item>
                   <br>
                   <br>
-                  <button ion-button color="light" outline (click)="goComf()" block>RESET MY PASSWORD</button>
+                  <button ion-button color="light" outline (click)="go('comf')" block>RESET MY PASSWORD</button>
                   <br>
-                  <button ion-button color="light" clear (click)="goSignUp()">Sign Up Now</button>
+                  <button ion-button color="light" clear (click)="go('signUp')">Sign Up Now</button>
               </ion-list>
           </form>
       </ion-col>

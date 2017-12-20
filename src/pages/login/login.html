@@ -24,14 +24,14 @@
                   <ion-list>
                       <ion-item>
                         <ion-icon name="person" item-start></ion-icon>
-                        <ion-input type="text" placeholder="Email or Ceeker ID"></ion-input>
+                        <ion-input type="email" placeholder="Email or Ceeker ID" clearInput></ion-input>
                       </ion-item>
                       <ion-item>
                         <ion-icon name="lock" item-start></ion-icon>
-                        <ion-input type="password" placeholder="Pasword"></ion-input>
+                        <ion-input type="password" placeholder="Pasword" clearInput></ion-input>
                       </ion-item>
                       <br>
-                      <p>forgot password? <button ion-button clear (click)="goReset()">Reset</button></p>  
+                      <p>forgot password? <button ion-button clear (click)="go('reset')">Reset</button></p>  
                       <ion-item>
                           <ion-label>Keep me</ion-label>
                           <ion-toggle></ion-toggle>
@@ -45,7 +45,7 @@
                       <br>
                       <button ion-button color="light" outline class="btn50">OK</button>
                       <br>
-                      <button ion-button color="light" clear (click)="goSignUp()">Sign Up Now</button>
+                      <button ion-button color="light" clear (click)="go('signUp')">Sign Up Now</button>
                   </ion-list>
               </form>
           </ion-col>

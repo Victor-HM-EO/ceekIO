@@ -19,19 +19,19 @@
                   <ion-list>
                     <ion-item>
                       <ion-icon name="mail" item-start></ion-icon>
-                      <ion-input type="text" placeholder="Email"></ion-input>
+                      <ion-input type="email" placeholder="Email" clearInput></ion-input>
                     </ion-item>
                     <ion-item>
                       <ion-icon name="person" item-start></ion-icon>
-                      <ion-input type="text" placeholder="Ceek Name"></ion-input>
+                      <ion-input type="text" placeholder="Ceek Name" clearInput></ion-input>
                     </ion-item>
                     <ion-item>
                       <ion-icon name="unlock" item-start></ion-icon>
-                      <ion-input type="password" placeholder="Pasword"></ion-input>
+                      <ion-input type="password" placeholder="Password" clearInput></ion-input>
                     </ion-item>
                     <ion-item>
                       <ion-icon name="lock" item-start></ion-icon>
-                      <ion-input type="text" placeholder="Confirmar Pasword"></ion-input>
+                      <ion-input type="password" placeholder="Confirmar Password" clearInput></ion-input>
                     </ion-item>
                     <br>
                     <!--<div padding>-->
@@ -46,10 +46,10 @@
                         </ion-segment>
                     </div>
                     <br>
-                    <button ion-button color="light" outline (click)="goPhotoUp()" block>Sing Up</button>
+                    <button ion-button color="light" outline (click)="go('photo')" block>Sign Up</button>
                     <br>
                     <p>Texto</p>
-                    <button ion-button clear (click)="goTerms()">Terms Of Services</button>
+                    <button ion-button clear (click)="go('terms')">Terms Of Services</button>
                   </ion-list>
                 </form>
             </ion-col>

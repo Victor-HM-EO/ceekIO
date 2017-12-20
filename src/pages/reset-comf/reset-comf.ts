@@ -8,7 +8,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
+@IonicPage({
+  name:'comf',
+  segment:'Comf'
+})
 @Component({
   selector: 'page-reset-comf',
   templateUrl: 'reset-comf.html',
@@ -17,7 +20,9 @@ export class ResetComfPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-
+  goBack():void{
+    this.navCtrl.pop();
+  }
   ionViewDidLoad() {
     console.log('ionViewDidLoad ResetComfPage');
   }
